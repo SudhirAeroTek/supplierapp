@@ -1,5 +1,0 @@
-smtp:
-    port: "8957"
-backendhttp:
-    port: "443"
-    host: "api.restful-api.dev"
