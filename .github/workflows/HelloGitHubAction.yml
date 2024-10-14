@@ -5,16 +5,24 @@ on:
                 type: string
                 description: "this string will be printed"
                 required: true
-                default: "First GitHubAction"
+                default: "upload package and deploy "
 
 
 jobs:
-    HelloGitHubJob:
+    upload-deploy:
         runs-on: uubuntu-18.04
         steps:
-            - name: printHello
-              run: |
-                echo "input works in double quote only  ${{github.event.inputs.myInput}} printed"
+        - uses: actions/checkout@v4
+        - name: Set up JDK 11
+          uses: actions/setup-java@v4 
+          with:
+             java-version: '17'
+             distribution: 'temurin'
+             cache: maven
+        - name: Build and upload with Maven
+          run: mvn deploy
+            
+
         
                
             
