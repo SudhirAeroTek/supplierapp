@@ -3,7 +3,7 @@
 	<activeProfiles>
 		<activeProfile>github</activeProfile>
 	</activeProfiles>
-	<!--<profiles>
+	<profiles>
 		<profile>
 			<id>github</id>
 			<repositories>
@@ -20,7 +20,7 @@
 				</repository>
 			</repositories>
 		</profile>
-	</profiles>-->
+	</profiles>
 	<servers>
 		<server>
 			<id>github</id>
