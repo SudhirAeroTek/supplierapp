@@ -20,7 +20,7 @@ jobs:
              distribution: 'temurin'
              cache: maven
         - name: Build and upload with Maven
-          run: mvn deploy -s ${{ github.workspace}}/.maven/settings.xml "-Dgithub.token=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"
+          run: mvn deploy -s ${{ github.workspace}}/.maven/settings.xml
             
         
                
