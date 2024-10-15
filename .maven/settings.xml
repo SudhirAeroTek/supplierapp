@@ -3,7 +3,7 @@
 	<activeProfiles>
 		<activeProfile>github</activeProfile>
 	</activeProfiles>
-	<profiles>
+	<!--<profiles>
 		<profile>
 			<id>github</id>
 			<repositories>
@@ -13,19 +13,20 @@
 				</repository>
 				<repository>
 					<id>github</id>
-					<url>https://maven.pkg.github.com/sudhiraerotek/supplierapp</url>
+					<url>https://maven.pkg.github.com/SudhirAeroTek/supplierapp</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
 				</repository>
 			</repositories>
 		</profile>
-	</profiles>
+	</profiles>-->
 	<servers>
 		<server>
 			<id>github</id>
 			<username>sudhirkilani1431987</username>
-			<password>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</password>
+			<password>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</password>
+			<!--<password>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</password>-->
 		</server>
 	</servers>
 </settings>
