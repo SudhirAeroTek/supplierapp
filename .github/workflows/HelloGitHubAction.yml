@@ -20,7 +20,7 @@ jobs:
              distribution: 'temurin'
              cache: maven
         - name: Build and upload with Maven
-          run: mvn deploy -s ${{ github.workspace}}/.maven/${{ github.event.inputs.environment }}-settings.xml
+          run: mvn deploy -s ${{ github.workspace}}/.maven/settings.xml
             
 
         
