@@ -25,7 +25,7 @@
 		<server>
 			<id>github</id>
 			<username>sudhirkilani1431987</username>
-			<password>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</password>
+			<password>${env.PAT_SUPPLIER}</password>
 			<!--<password>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</password>-->
 		</server>
 	</servers>
