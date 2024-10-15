@@ -1,1 +1,32 @@
+on:
+    workflow_dispatch: 
+        inputs:
+            myInput:
+                type: string
+                description: "this string will be printed"
+                required: true
+                default: "upload package and deploy "
 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: Configure Maven settings
+        run: |
+          mkdir -p ~/.m2
+          cp .maven/settings.xml ~/.m2/settings.xml
+
+      - name: Build and deploy
+        run: mvn deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
