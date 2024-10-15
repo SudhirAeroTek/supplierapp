@@ -107,7 +107,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub OWNER Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/SudhirAeroTek/supplierapp</url>
+			<url>https://maven.pkg.github.com/sudhiraerotek/supplierapp</url>
 		</repository>
 	</distributionManagement>
 
